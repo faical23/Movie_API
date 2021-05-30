@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    top: 25px;
+    .row {
+        width: 100%;
+    }
+    .left_bar {
+        position: relative;
+        top: 7px;
+    }
+    .right_bar {
+        float: right;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            list-style: none;
+            padding: 0px 20px;
+            font-size: 18px;
+            font-weight: 400;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.hero {
+    .zone_hero {
+        background-image: url(../img/thibault-penin-AWOl7qqsffM-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 100px 45px;
+        border-radius: 30px;
+        margin: 39px 0px;
+        color: white;
+        .welcome {
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .behappy {
+            font-weight: 600;
+            font-size: 50px;
+        }
+        input {
+            width: 100%;
+            border-radius: 30px;
+            border: navajowhite;
+            padding: 18px;
+            padding-left: 30px;
+            margin: 30px 0px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.recommonded,
+.popular,
+.genre_drama,
+.genre_action {
+    margin-bottom: 80px;
+    h2 {
+        font-size: 35px;
+        font-weight: bolder;
+        padding-bottom: 30px;
+    }
+    .recommended_movie,
+    .popular_movie,
+    .genre_drama_movie,
+    .genre_action_movie {
+        display: flex;
+        overflow-x: scroll;
+        .movie {
+            padding: 0px 20px;
+            text-decoration: none;
+            color: black;
+            position: relative;
+            img {
+                border-radius: 20px;
+                width: 200px;
+            }
+            h3 {
+                font-size: 16px;
+                line-height: 19px;
+                margin-top: 15px;
+            }
+            p {
+                font-size: 13px;
+                bottom: 3px;
+            }
+            h3,
+            p {
+                position: relative;
+                left: 5px;
+            }
+            span {
+                display: inline;
+                position: absolute;
+                text-align: center;
+                color: yellow;
+                font-size: 50px;
+                top: 18px;
+                right: 35px;
+                i {
+                    font-size: 16px;
+                    position: absolute;
+                    right: 13px;
+                    color: black;
+                    top: 17px;
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    position: relative;
+    top: 20px;
+    border-radius: 30px;
+    height: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 30px grey;
+    border-radius: 30px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #e7e7e7;
+    border-radius: 30px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.zone_movie_hero {
+    background-image: url(../img/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    padding: 50px 45px;
+    border-radius: 30px;
+    margin: 39px 0px;
+    color: white !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .post_path {
+        box-shadow: 0px 0px 1px 0px white;
+    }
+    .row {
+        align-items: center;
+    }
+    .post_path {
+        border-radius: 30px;
+    }
+    .Moviename {
+        font-weight: 900;
+        font-size: 35px;
+    }
+    .date {
+        color: gray;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .genre {
+        display: flex;
+        p {
+            padding-right: 15px;
+            font-weight: 500;
+        }
+    }
+    .time,
+    .vote_average {
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .fa-star {
+        color: yellow;
+        font-size: 40px;
+    }
+    .vote_average {
+        font-weight: bold;
+        position: relative;
+        bottom: 3px;
+        left: 5px;
+    }
+    .overview {
+        font-size: 17px;
+        color: rgb(219, 219, 219);
+    }
+    .btn {
+        border-radius: 50px;
+        width: 120px;
+        margin-right: 40px;
+        background-color: white;
+        color: black;
+        border: none;
+        outline: none;
+        margin-top: 30px;
+        &:visited {
+            outline: none;
+        }
+    }
+}
+
+.trailer,
+.movie_pic {
+    text-align: center;
+    iframe {
+        width: 50%;
+        height: 400px;
+    }
+    h2 {
+        font-weight: bold;
+        padding: 20px;
+    }
+}
+
+.all_img_movie {
+    img {
+        margin-bottom: 20px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.films {
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    padding-bottom: 100px;
+    .side_bare {
+        position: sticky;
+        top: 55px;
+        span {
+            display: block;
+            margin: 20px 0px;
+            padding: 11px 10px;
+            border-radius: 14px;
+            width: 55%;
+            font-weight: bold;
+            background-color: rgb(29, 19, 82);
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            &:hover {
+                color: rgb(29, 19, 82);
+                background-color: white;
+                border: 1px solid rgb(29, 19, 82);
+            }
+        }
+    }
+    // .films_by_category {}
+}
+
+.movie {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    img {
+        border-radius: 14px;
+        width: 180px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 15px;
+    }
+    p {
+        font-size: 13px;
+        bottom: 3px;
+    }
+    h3,
+    p {
+        position: relative;
+        left: 5px;
+    }
+    span {
+        display: inline;
+        position: absolute;
+        text-align: center;
+        color: yellow;
+        font-size: 50px;
+        right: 18px;
+        bottom: 70px;
+        i {
+            font-size: 16px;
+            position: absolute;
+            right: 13px;
+            color: black;
+            top: 17px;
+        }
+    }
+}
+
+.notfound {
+    position: relative;
+    left: 20px;
+    display: none;
+}
