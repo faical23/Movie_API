@@ -66,7 +66,6 @@ search.addEventListener('keyup', () => {
             for (let i = 0; i < 5; i++) {
                 dataMoovie.innerHTML += `<option value='${data.results[i].title}'>`
                 document.querySelector('.notfound ').style = 'display:none'
-                    // console.log(data.results[i].title)
             }
         }
 
